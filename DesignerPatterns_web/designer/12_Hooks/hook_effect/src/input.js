@@ -1,0 +1,17 @@
+import React, { useState, useEffect } from "react";
+
+export default function Input() {
+  const [input, setInput] = useState("");
+
+  useEffect(() => {
+    console.log(`The user typed ${input}`);
+  }, [input]);
+
+  return (
+    <input
+      onChange={e => setInput(e.target.value)}
+      value={input}
+      placeholder="Type something..."
+    />
+  );
+}

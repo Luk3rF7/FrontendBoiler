@@ -1,0 +1,29 @@
+.product-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+}
+
+.product-title {
+  font-size: 1.2em;
+}
+
+.product-description {
+  font-size: 0.9em;
+}
+
+.product-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.add-to-cart {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

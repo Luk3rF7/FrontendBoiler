@@ -1,0 +1,12 @@
+{
+  "name": "01_singleton",
+  "version": "1.0.0",
+  "description": "<h1> Singleton </h1>",
+  "main": "recebeIns.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
