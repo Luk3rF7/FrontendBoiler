@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background: blue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.row {
+  background: steelblue;
+  display-flex: 1;
+  display: flex;
+}
+
+.column {
+  border: 2px solid #000;
+  --webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  height: 300px;
+}
+.footer {
+  background: teal;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
