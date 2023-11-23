@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-alinhamento {
+  /* alinhamento  */
+
+  /* 
+   * coluna 
+   grid-template-columns 
+   a gente manipula coluna
+   pode criar colunas com tamanho: 
+   
+   valores tamanho bruto px % vh vw 
+   valor bruto =  40px 40px 40px 40px
+   
+   fração -> 1fr 1fr 1fr 
+   fração = vai automaticamente encaixar no
+   
+   container conforme fraçao  passada 
+
+   propriedade  min-max() podemos: 
+
+   min-max(0,1fr)
+   min-max(200px,1fr) sem orden minimo maximo
+   
+   com repeat posso repetir exemplo:
+
+   auto-fit vai automaticamente exampir com a tela
+   repeat(auto-fit,minmax(200px,1fr)
+   auto-fill vai auto preenchendo 
+   
+   posso tbm utilizar : 
+   
+   repeat(4,minmax(200px,1fr))
+   onde irei definir 4 colunas com min 200px max 1fr
+   */
+
+  grid-template-rows: 1fr 1fr;
+  /* 
+    * grid-template-rows 
+    defino medida das linhas : line line line 
+    grid-template-rows: auto 200px 300px 
+    primeiro line sera automatica
+    segunda line tera 200px 
+    terceira tera 300px
+
+    * grid-auto-rows: 
+    vai gera automaticamente linha q gente passar
+  */
+}
+.container {
+  border: 1px solid tomato;
+  margin: 8px;
+  display: grid;
+  gap: 8px;
+}
+
+.item {
+  background: green;
+}

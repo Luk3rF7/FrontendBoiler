@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+
+  /* 
+    * justify-content
+  alinha mento utilizo */
+  justify-content: flex;
+
+  /* 
+  * align-items
+  alinhamento coluna utilizo */
+  align-items: flex;
+
+  /* 
+  * flex-direction 
+  seu utilizar flex-direction
+   ele inverte  papel: 
+   row -> justify = linha , align = coluna 
+   column -> justify = coluna , align = row
+   */
+  flex-direction: column;
+  /* 
+  * flex-wrap
+  flex-wrap ele vai 
+  quebrar caso chegue 
+  no final da linha 
+  ele quebra
+  */
+  flex-wrap: wrap;
+  /* 
+    *align-self
+  com align-self a gente 
+  muda posição do elemento 
+  */
+  align-self: start;
+  /* 
+    * Flex-basis
+  Com essa propriedade a gente 
+  faz com que elem tenha tamanho base
+  */
+  flex-basis: 90px;
+  /* 
+  * flex-grow
+  o quanto esse elemento vai crescer
+  */
+  flex-grow: 1;
+  /* 
+    * flex-shrink 
+    o quanto ele vai reduzir
+  */
+  flex-shrink: 1;
+  /* 
+   shortcurt Flex adicionamos no container pai
+    orden :
+    grow 
+    shrink
+    basis
+  */
+  flex: 1;
+}
+.container {
+  max-width: 400px;
+  height: 100vh;
+  border: 2px solid red;
+  /* elemento pai */
+  display: flex;
+}
+
+.box {
+  /* Controlado pelo elem pai */
+  background: #d4d4d4;
+  border: 1px solid green;
+  height: 60px;
+  width: 60px;
+  flex-basis: 90px;
+}
+#item1 {
+  flex-grow: 1;
+}
+#item2 {
+  flex-grow: 1;
+}
